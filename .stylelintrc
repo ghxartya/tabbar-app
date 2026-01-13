@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-tailwindcss",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": null,
+    "value-keyword-case": null
+  },
+  "ignoreFiles": [".next/**/*", "node_modules/**/*", "out/**/*", "build/**/*"]
+}

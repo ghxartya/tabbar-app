@@ -3,32 +3,27 @@
 @theme inline {
   --height-header: var(--header);
   --width-sidebar: var(--sidebar);
-
   --spacing-header: var(--header);
   --spacing-sidebar: var(--sidebar);
-
   --color-primary: var(--primary);
   --color-secondary: var(--ghost);
-
   --color-accent: var(--accent);
   --color-border: var(--border);
-
   --color-background: var(--bg);
-  --font-poppins: var(--font-poppins);
 }
 
 @layer base {
   :root {
-    --header: 4.375rem; // Header Height 70px
-    --sidebar: 3.75rem; // Sidebar Width 60px
+    --header: 4.375rem; /* Header Height 70px */
+    --sidebar: 3.75rem; /* Sidebar Width 60px */
   }
 
   html {
-    --primary: #343434; // Primary Color
-    --accent: #4690e2; // Blue-focus Color
-    --ghost: #7f858d; // Secondary Color
-    --border: #aeb6ce33; // Border Color
-    --bg: #fefefe; // Background Color
+    --primary: #343434; /* Primary Color */
+    --accent: #4690e2; /* Blue-focus Color */
+    --ghost: #7f858d; /* Secondary Color */
+    --border: #aeb6ce33; /* Border Color */
+    --bg: #fefefe; /* Background Color */
   }
 }
 
@@ -40,7 +35,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: var(--font-poppins);
   overflow-x: hidden;
 
   &::-webkit-scrollbar {

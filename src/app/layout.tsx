@@ -1,7 +1,8 @@
 import clsx from 'clsx'
 import type { Metadata, Viewport } from 'next'
 import { Poppins } from 'next/font/google'
-import './globals.css'
+
+import '@/assets/styles/globals.css'
 
 const poppins = Poppins({
   variable: '--font-poppins',
