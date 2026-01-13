@@ -15,6 +15,7 @@ const eslintConfig = defineConfig([
     },
     rules: {
       'prettier/prettier': 'off',
+      'react-hooks/exhaustive-deps': 'off',
       ...betterTailwindcss.configs.recommended.rules,
       'better-tailwindcss/enforce-consistent-class-order': 'off',
       'better-tailwindcss/enforce-consistent-line-wrapping': 'off'

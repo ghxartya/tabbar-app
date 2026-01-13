@@ -4,6 +4,11 @@ import { Poppins } from 'next/font/google'
 
 import '@/assets/styles/globals.css'
 
+import Header from '@/layout/Header'
+import Sidebar from '@/layout/Sidebar'
+
+import TabBar from '@/ui/tabbar/TabBar'
+
 const poppins = Poppins({
   variable: '--font-poppins',
   subsets: ['latin'],
@@ -29,7 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={clsx(poppins.variable, 'antialiased')}>{children}</body>
+      <body className={clsx(poppins.variable, 'antialiased')}>
+        <Sidebar />
+        <Header />
+        <TabBar />
+        {children}
+      </body>
     </html>
   )
 }

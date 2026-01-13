@@ -8,7 +8,7 @@
   --color-primary: var(--primary);
   --color-secondary: var(--ghost);
   --color-accent: var(--accent);
-  --color-border: var(--border);
+  --color-frame: var(--frame);
   --color-background: var(--bg);
 }
 
@@ -22,9 +22,13 @@
     --primary: #343434; /* Primary Color */
     --accent: #4690e2; /* Blue-focus Color */
     --ghost: #7f858d; /* Secondary Color */
-    --border: #aeb6ce33; /* Border Color */
+    --frame: #aeb6ce33; /* Border Color */
     --bg: #fefefe; /* Background Color */
   }
+}
+
+* {
+  user-select: none;
 }
 
 :root {
@@ -36,7 +40,7 @@
 
 body {
   font-family: var(--font-poppins);
-  overflow-x: hidden;
+  overflow: hidden;
 
   &::-webkit-scrollbar {
     display: none;
